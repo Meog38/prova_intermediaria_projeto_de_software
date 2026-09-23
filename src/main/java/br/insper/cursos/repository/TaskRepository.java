@@ -1,4 +1,6 @@
 package br.insper.cursos.repository;
 
-public class TaskRepository {
-}
+import br.insper.cursos.entity.Task;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TaskRepository extends JpaRepository<Task, Long> {}
